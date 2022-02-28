@@ -1,0 +1,133 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat Alternates;
+    background: #1A1919;
+    color: #d9dee2;
+    background-image: url("../classy-fabric.png");
+}
+
+button, a {
+    color:inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-top: 80px;
+
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 470px;
+}
+
+.gerador {
+    position: relative;
+    margin: 40px 0 70px 0;
+}
+
+.container-gerador {
+    display:flex
+}
+
+.btn-mudar-cor {
+    position: absolute;
+    top: calc(50% - 40px);
+    right: -80px;
+    font-size: 40px;
+    padding:10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.btn-mudar-cor:hover {
+    background: #131212;
+}
+
+.item-cor {
+    flex:1;
+    text-align: center;
+}
+
+.block-btn {
+    border-radius: 5px;
+    width:100%;
+    padding:10px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.block-btn:hover {
+    background-color: #131212;
+}
+
+.cor {
+    height: 120px;
+    width: 120px;
+}
+
+.item-cor:nth-of-type(1) .cor {
+    background-color: rgb(24, 28, 85);
+}
+
+.item-cor:nth-of-type(2) .cor {
+    background-color: rgb(85, 24, 77);
+}
+
+.item-cor:nth-of-type(3) .cor {
+    background-color: rgb(146, 17, 49);
+}
+
+.item-cor:nth-of-type(4) .cor {
+    background-color: rgb(42, 24, 85);
+}
+
+.item-cor:nth-of-type(5) .cor {
+    background-color: rgb(51, 55, 121);
+}
+
+.codigo-cor {
+    display:block;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.observacao, footer {
+    font-size: 14px;
+    color: #565656;   
+    font-style: italic;
+    text-align: center;
+}
+
+.observacao span {
+    color: #d9dee2
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}   
+
+footer a:hover {
+    color: #d9dee2
+}
