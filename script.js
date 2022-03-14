@@ -104,7 +104,10 @@ allColors.forEach((div) => {
 btnChangeAll.addEventListener('click', changeAllColors)
 
 document.addEventListener('keypress', (e) => {
-    if (e.code == "Space") changeAllColors()
+    if (e.code == "Space") {
+        btnChangeAll.blur()
+        changeAllColors()
+    }
 })
 
 changeAllColors()
